@@ -1,0 +1,151 @@
+.pokemoncard{
+    background-color: #eee;
+    width: 40rem;
+    border: 0.2 solid red;
+    height: 50rem;
+    box-sizing: 0 0 2rem rgba(0,0,0,0.2);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    /* background: rgb(240, 141, 55); */
+    /* border: rgb(248, 248, 87) 10px solid; */
+}
+
+
+.pokemoncard, .pokemoncard *{
+    /* border: 0.1rem solid red; */
+}
+
+.pokemoncard__header{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pokemoncard__title{
+    font-size: 200%;
+    font-weight: 400;
+
+}
+.pokemoncardlabelwrapper{
+    display: flex;
+    gap: 1rem;
+}
+.pokemoncard__type{
+    font-size: 75%;
+    background-color: rgb(255, 0, 0);
+    padding: 0.4rem;
+    /* border-radius: 1rem; */
+    width: 8rem;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemoncard__type__Fighting{
+    background: crimson;
+    color: white;
+}
+
+.pokemoncard__type__Flying{
+    background: rgb(187, 235, 252);
+    color: black;
+}
+.pokemoncard__type__Dragon{
+    background: rgb(144, 223, 252);
+    color: black;
+}
+
+.pokemoncard__type__Grass{
+    background: green;
+    color: white;
+}
+
+.pokemoncard__type__Water{
+    background: rgb(0, 110, 255);
+    color: white;
+}
+
+.pokemoncard__type__Ground{
+    background: rgb(126, 102, 70);
+    color: white;
+}
+
+.pokemoncard__type__Dark{
+    background: rgb(4, 2, 36);
+    color: white;
+}
+.pokemoncard__section{
+    height: 60%;
+}
+.pokemoncard__figure{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.pokemoncard__img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.pokemoncard__h3__wrapper{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.pokemoncard__HP{
+    font-weight: 400;
+    font-size: 90%;
+}
+
+.pokemoncard__footer{
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.pokemoncard__btn{
+    background: none;
+    border-radius: 0.5rem;
+    font-size: 100%;
+    border: 0.2rem solid rgb(0, 0, 0);
+    padding: 0.5rem 2.5rem;
+    transition: 0.5s all ease;
+    text-transform: uppercase;
+    flex-grow: 1;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+
+.pokemoncard__btn:hover{    
+    cursor: pointer;
+}
+
+.pokemoncard__btn__attack{
+    background: hsl(348, 83%, 47%);
+}
+.pokemoncard__btn__attack:hover{
+    background: hsl(348, 83%, 40%);
+}
+.pokemoncard__btn__catch{
+    background: hsl(115, 96%, 47%);
+}
+.pokemoncard__btn__catch:hover{
+    background: hsl(115, 96%, 40%);
+}
+
+
+@media screen and (max-width: 62.5rem){
+    .pokemoncard{
+        width: 100%;
+    }
+}

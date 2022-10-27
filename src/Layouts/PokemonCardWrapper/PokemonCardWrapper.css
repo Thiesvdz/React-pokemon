@@ -1,0 +1,13 @@
+.PokemonCardWrapper{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 62.5rem){
+    .PokemonCardWrapper{
+        width: 100%;
+    }
+}

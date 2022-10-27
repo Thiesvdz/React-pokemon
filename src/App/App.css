@@ -1,0 +1,37 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 0.1rem solid red; */
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    /* background: linear-gradient(grey, black); */
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#root{
+    min-height: 100vh;
+    gap: 3rem;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 62.5rem){
+    .main{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
